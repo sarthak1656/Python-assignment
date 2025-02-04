@@ -1,3 +1,6 @@
+#  Write a Python function that reads the file file1 and copies only alternative lines to another file file2.
+# Alternative lines copied should be the odd numbered lines
+
 def alternate(file1,file2):
     try:
         with open(file1,"r") as source:

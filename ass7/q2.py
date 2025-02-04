@@ -1,3 +1,7 @@
+# Write a Python function that reads a file file1 and displays the number of words and the number of
+# vowels in the file 
+
+
 def count(file1):
     try:
         with open(file1,"r") as infile:
