@@ -47,8 +47,10 @@ print(cdist(user_dict))'''
 
 
 
-'''def count(f1):
+def count(f1):
     try:
+        with open(f1,"w") as outfile:
+            outfile.write("hello world")
         with open(f1,"r") as infile:
             text=infile.read()
             words=text.split()
@@ -58,12 +60,12 @@ print(cdist(user_dict))'''
     except Exception as e:
         print(e)
 
-count("f1.txt")'''
+count("f1.txt")
 
 
 
 
-def storeInput(f1):
+'''def storeInput(f1):
     with open (f1,"w") as file:
         print("Enter the test to store in file press enter in a empty line to finsish")
 
@@ -76,7 +78,7 @@ def storeInput(f1):
         print(f"\nFile saved in {f1} is: \n")
         print(infile.read())
 
-storeInput("f2.txt")
+storeInput("f2.txt")'''
         
 
     

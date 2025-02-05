@@ -49,6 +49,8 @@ print(cdist(user_dict))
 
 def count(f1):
     try:
+        with open(f1,"w") as outfile:
+            outfile.write("hello world")
         with open(f1,"r") as infile:
             text=infile.read()
             words=text.split()
